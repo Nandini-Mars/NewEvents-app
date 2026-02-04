@@ -1,0 +1,162 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Body */
+body {
+  background-color: #121212; /* dark background */
+  color: #fff; /* default text color */
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Buttons */
+button {
+  background-color: #ffc107; /* yellow button */
+  color: #121212; /* dark text */
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: transform 0.2s;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+/* Navbar */
+nav {
+  background-color: #1f1f1f;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+nav a {
+  margin-right: 15px;
+  font-weight: bold;
+}
+
+/* Welcome Page */
+div.welcome-container {
+  background-color: #1e1e1e;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+div.welcome-container h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+div.welcome-container h1 span {
+  color: #ffc107; /* highlight "The Social Hub" */
+}
+
+div.welcome-container p {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: #ccc;
+}
+
+div.welcome-container button {
+  margin-top: 30px;
+  font-size: 1rem;
+}
+
+/* Navbar */
+nav {
+  background-color: #1e1e1e;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 15px 30px;
+  font-weight: bold;
+}
+
+nav a {
+  margin-right: 20px;
+  color: #fff;
+  transition: color 0.2s;
+}
+
+nav a:hover {
+  color: #ffc107; /* highlight on hover */
+}
+
+nav button {
+  margin-left: auto;
+  background-color: #ffc107;
+  color: #1e1e1e;
+  padding: 8px 16px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+nav button:hover {
+  transform: scale(1.05);
+}
+
+/* Events Page */
+.events-container {
+  padding: 40px 20px;
+  background-color: #121212;
+  min-height: 100vh;
+}
+
+.events-container h1 {
+  color: #fff;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.events-container button {
+  background-color: #ffc107;
+  color: #121212;
+  border-radius: 6px;
+  padding: 10px 20px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.event-card {
+  background-color: #1e1e1e;
+  padding: 20px;
+  border-radius: 10px;
+  color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s;
+}
+
+.event-card:hover {
+  transform: translateY(-5px);
+}
+
+.event-card h2 {
+  color: #ffc107;
+  margin-bottom: 10px;
+}
+
+.event-card p {
+  margin: 5px 0;
+  color: #ccc;
+}
