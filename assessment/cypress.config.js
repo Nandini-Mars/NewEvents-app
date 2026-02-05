@@ -30,7 +30,10 @@ module.exports = defineConfig({
 
     setupNodeEvents(on, config) {
       config.env = config.env || {};
-      config.env.frontendUrl = "http://localhost:5174";
+      config.env.frontendUrl =
+        port === "3000" || port === "5173"
+          ? `http://localhost:${port}`
+          : "http://localhost:3000";
       config.env.backendUrl = "http://localhost:5000";
       return config;
     },
