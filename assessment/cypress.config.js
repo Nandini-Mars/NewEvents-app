@@ -34,7 +34,10 @@ module.exports = defineConfig({
         port === "3000" || port === "5173"
           ? `http://localhost:${port}`
           : "http://localhost:3000";
-      config.env.backendUrl = "http://localhost:5000";
+      const isLocal = window.location.hostname === "localhost";
+      config.env.backendUrl = isLocal
+        ? "http://localhost:5000"
+        : "https://newevents-app.onrender.com";
       return config;
     },
 
